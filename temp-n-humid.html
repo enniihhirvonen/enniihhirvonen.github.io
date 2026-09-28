@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature and Humidity</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/temp-n-humid.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <div class="mainWrap">
+        <div class="header">
+            <h1>Temperature and Humidity dashboard</h1>
+        </div>
+
+        <div class="meas">
+            <div class="notices" aria-live="polite">
+                <p class="notice" id="temperature-notice"></p>
+                <p class="notice" id="humidity-notice"></p>
+            </div>
+            <div class="lastMeasured">
+                <p class="last" id="last-temperature">Loading latest temperature...</p>
+                <p class="last" id="last-humidity">Loading latest humidity...</p>
+            </div>
+            <p class="measured" id="measured-at">Loading measurement time...</p>
+        </div>
+
+        <div class="tempChart">
+            <h2>Temperature Line Chart</h2>
+            <div class="chart" id="chart_div1"></div>
+            <script src="js/temperature_chart.js"></script>
+        </div>
+
+        <div class="humidChart">
+            <h2>Humidity Line Chart</h2>
+            <div class="chart" id="chart_div2"></div>
+            <script src="js/humidity_chart.js"></script>
+        </div>
+
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

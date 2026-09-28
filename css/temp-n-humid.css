@@ -1,0 +1,81 @@
+.mainWrap {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.header {
+    color: rgb(54, 64, 158);
+    padding: 30px 0 30px 0;
+    text-align: center;
+    background-color: rgb(174, 200, 255);
+    border-bottom: rgb(132, 144, 251) solid 4px;
+}
+
+.meas {
+    width: 50%;
+    margin: 30px auto;
+    background-color: rgb(184, 221, 255);
+    border: rgb(136, 173, 255) solid 2px;
+    box-shadow: -3px 3px 0px rgb(136, 173, 255);
+
+    .lastMeasured {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+        .last {
+            text-align: center;
+        }
+    }
+
+    .measured {
+        font-size: 1.1rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
+.notices {
+    text-align: center;
+    padding: 10px 8px 0;
+}
+
+.notice {
+    color: #a12622;
+    font-weight: bold;
+}
+
+.notice:empty {
+    display: none;
+}
+
+.tempChart .humidChart {
+    margin: 0;
+    padding: 0;
+}
+
+.chart {
+    width: 80%;
+    height: 500px;
+    padding: 0 30px 20px 30px;
+    margin: 0 auto;
+    background-color: white;
+    border: rgb(136, 173, 255) solid 2px;
+    box-shadow: -6px 6px 0px rgb(136, 173, 255);
+}
+
+h2 {
+    color: rgb(42, 87, 186);
+    margin: 40px 0 10px 0;
+    text-align: center;
+}
+
+p {
+    color: rgb(48, 95, 196);
+    margin: 20px 0 10px 0;
+    font-size: 1.2rem;
+}
+
+.footer {
+    height: 40px;
+}
